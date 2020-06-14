@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>游戏模式</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/2.js"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//返回顶部
+	        $(function () {
+	            $(window).scroll(function(){
+	                if ($(window).scrollTop()>100){/*距离顶部*/
+	                    $("#toTop").fadeIn(1000);/*出现渐变*/
+	                }
+	                else
+	                {
+	                    $("#toTop").fadeOut(500);/*消失渐变*/
+	                }
+	            });
+	    
+	            $("#toTop").click(function(){
+	                $('body,html').animate({scrollTop:0},500);/*调整返回速度*/
+	                return false;
+	            });
+	        });
+		</script>
+	</head>
+	<body>
+		<div id="whole">
+			<div id="d16">
+				<div id="head">
+					<div id="nav">
+						<div class="logo">
+							<a href="1.html"><img src="img/1.png"></a>
+						</div>
+						<div class="c2"><a href="index.html">首页</a></div>
+						<div class="c2"><a href="juese.html">角色</a></div>
+						<div class="c2"><a href="shipin.html">视频CG</a></div>
+						<div class="c2"><a href="xiazai.html">下载</a></div>
+						<div id="c22" class="c2"><a href="beijinggushi.html">背景故事</a></div>
+						<div id="c22" class="c2"><a href="youximoshi.html">游戏模式</a></div>
+						<div id="c22" class="c2"><a href="lianxi.html">联系我们</a></div>
+						<div id="d4">
+							<a href="###">通行证</a>
+							<div class="c1">
+								<div id="c11">
+									<button id="login" type="button" onclick="divshow()">登录</button>
+								</div>
+								<div id="c12">
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">注册</a>
+								</div>
+								<div id="c13">
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">账户</a>
+								</div>
+							</div>								
+						</div>
+						<div id="d5">
+							<img class="img2" src="img/logo1.png"/>
+							<a onclick="divclose()"><img class="i" src="img/QQ图片20181123135526.png"/></a>
+							<div id="biaodan">
+							<form name="form">
+								<div class="form">
+									<div id="form-item1" class="form-item">
+										<input type="text" name="text" placeholder="电子邮箱" autocomplete="off">
+									</div>
+									<div id="form-item2" class="form-item">
+										<input type="password" name="password" placeholder="密码" autocomplete="off">
+									</div>
+									<div id="denglu">
+										<button class="button1" type="button">登录</button>
+									</div>
+								</div>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="moshi">
+					<a href="###">
+					<h2 class="hh">游戏模式</h2>
+					<p class="p8">《守望先锋》中有许多游戏内容，我们建议先从教学模式开始了解游戏的基础，然后在主菜单页面下体验其他模式：</p>
+					<div id="bachang">
+						<img class="i8" src="img/bachang.jpg"/>
+						<img class="i9" src="img/bachang2.png"/>
+						<h2 class="hh4">训练靶场</h2>
+						<p align="center" style="color: rgb(159,159,159);">这个模式你可以利用机器人锻炼枪法，了解技能的使用，磨练自己的技艺或者尝试体验新的英雄。</p>
+					</div>
+					</a>
+					<a href="###">
+					<div id="diannao">
+						<img class="i8" src="img/diannao.jpg"/>
+						<img class="i9" src="img/diannao2.png"/>
+						<h2 class="hh4">电脑训练</h2>
+						<p align="center" style="color: rgb(159,159,159);">这个模式可以让你对抗电脑控制的敌人，并选择想要尝试的地图。在这个模式你可以体验不同的地图以及如何进行配合。</p>
+					</div>
+					</a>
+					<a href="###">
+					<div id="kuaisu">
+						<img class="i8" src="img/kuaisu.jpg"/>
+						<img class="i9" src="img/kuaisu2.png"/>
+						<h2 class="hh4">快速游戏</h2>
+						<p align="center" style="color: rgb(159,159,159);">这个模式可以让你对抗电脑控制的敌人，并选择想要尝试的地图。在这个模式你可以体验不同的地图以及如何进行配合。</p>
+					</div>
+					</a>
+					<a href="###">
+					<div id="zidingyi">
+						<img class="i8" src="img/zidingyi.jpg"/>
+						<img class="i9" src="img/zidingyi2.png"/>
+						<h2 class="hh4">自定比赛</h2>
+						<p align="center" style="color: rgb(159,159,159);">这个模式可以让你对抗电脑控制的敌人，并选择想要尝试的地图。在这个模式你可以体验不同的地图以及如何进行配合。</p>
+					</div>
+					</a>
+					<a href="###">
+					<div id="jieji">
+						<img class="i8" src="img/jieji.jpg"/>
+						<img class="i9" src="img/jieji2.png"/>
+						<h2 class="hh4">街机先锋</h2>
+						<p align="center" style="color: rgb(159,159,159);">这个模式可以让你对抗电脑控制的敌人，并选择想要尝试的地图。在这个模式你可以体验不同的地图以及如何进行配合。</p>
+					</div>
+					</a>
+					<a href="###">
+					<div id="jingji">
+						<img class="i8" src="img/jingji.jpg"/>
+						<img class="i9" src="img/jingji2.png"/>
+						<h2 class="hh4">竞技比赛</h2>
+						<p align="center" style="color: rgb(159,159,159);">这个模式可以让你对抗电脑控制的敌人，并选择想要尝试的地图。在这个模式你可以体验不同的地图以及如何进行配合。</p>
+					</div>
+					</a>
+				</div>
+			</div>
+			<div id="d2">
+				<div id="yejiao1">
+					<img class="i3" src="img/未标题-2.png"/>
+				</div>
+				<div id="yejiao2">
+					<br />
+					<a href="###">隐私</a>&nbsp;丨&nbsp;
+					<a href="###">法律条款</a>&nbsp;丨&nbsp;
+					<a href="###">API</a>
+					<br /><br />
+					<p>&copy;2019师大512版权所有&nbsp;&nbsp;&nbsp;ICP备号：你猜猜有没有&nbsp;&nbsp;&nbsp;<br/>
+						互联网违法和不良信息举报电话：110110110&nbsp;&nbsp;&nbsp;<br/>
+						技术支持：雷霆嘎巴，无情哈拉少
+					丨适龄提示：适合130岁及以上使用
+					</p>
+				</div>
+				<div id="yejiao3">
+					<hr class="hr1" />
+					<p class="p1">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理最大化游戏时间，避免沉溺生活影响游戏，注意自我保护，防范网络陷阱。<br />
+		健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏会益脑，沉迷游戏不伤身。合理安排时间，享受游戏生活。
+					</p>
+				</div>
+			</div>
+			<a href="javascript:void(0)" id="toTop" style="display: none;">TOP<img class="totop" src="img/totop.jpg"/></a>
+		</div>
+	</body>
+</html>

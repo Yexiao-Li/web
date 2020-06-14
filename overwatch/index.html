@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//返回顶部
+	        $(function () {
+	            $(window).scroll(function(){
+	                if ($(window).scrollTop()>100){/*距离顶部*/
+	                    $("#toTop").fadeIn(1000);/*出现渐变*/
+	                }
+	                else
+	                {
+	                    $("#toTop").fadeOut(500);/*消失渐变*/
+	                }
+	            });
+	    
+	            $("#toTop").click(function(){
+	                $('body,html').animate({scrollTop:0},500);/*调整返回速度*/
+	                return false;
+	            });
+	        });
+		</script>
+	</head>
+	<body>
+		<div id="whole">	
+			<div id="d1">
+				<div id="head">
+					<div id="lunbo">
+						<div id="leftannue">
+							<a href="#" id="prev" class="leftannue1">&lt;</a>
+						</div>
+						<div id="rightannue">
+							<a href="#" id="next" class="rightannue1">&gt;</a>
+						</div>
+						<div id="d3">
+							<img id="img" src="img/7.jpg" alt="轮播图"/>
+						</div>
+					</div>
+					<div id="xinwen">
+						<h2 class="h">新闻公告</h2>
+						<div id="d6">
+							<img class="img3" src="img/QQ图片20181202170502.png"/>
+						</div>	
+						<div id="d7">
+							<a href="#" onclick="divshow1()"><img class="img3" src="img/QQ图片20181202163406.png"/></a>
+						</div>
+							
+					</div>
+						<div id="d77">
+							<a onclick="divclose1()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+							<video src="img/动画短片-重逢.mp4" id="videofile" controls="controls" preload="auto"></video>
+						</div>
+					<div id="nav">
+						<div class="logo">
+								<a href="1.html"><img src="img/1.png"></a>
+						</div>
+						<div class="c2"><a href="index.html">首页</a></div>
+						<div class="c2"><a href="juese.html">角色</a></div>
+						<div class="c2"><a href="shipin.html">视频CG</a></div>
+						<div class="c2"><a href="xiazai.html">下载</a></div>
+						<div id="c22" class="c2"><a href="beijinggushi.html">背景故事</a></div>
+						<div id="c22" class="c2"><a href="youximoshi.html">游戏模式</a></div>
+						<div id="c22" class="c2"><a href="lianxi.html">联系我们</a></div>
+						<div id="d4">
+							<a href="###">通行证</a>
+							<div class="c1">
+								<div id="c11">
+									<button id="login" type="button" onclick="divshow()">登录</button>
+								</div>
+								<div id="c12">
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">注册</a>
+								</div>
+								<div id="c13">
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">账户</a>
+								</div>
+							</div>								
+						</div>
+						<div id="d5">
+							<img class="img2" src="img/logo1.png"/>
+							<a onclick="divclose()"><img class="i" src="img/QQ图片20181123135526.png"/></a>
+							<div id="biaodan">
+							<form name="form">
+								<div class="form">
+									<div id="form-item1" class="form-item">
+										<input type="text" name="text" placeholder="电子邮箱" autocomplete="off">
+									</div>
+									<div id="form-item2" class="form-item">
+										<input type="password" name="password" placeholder="密码" autocomplete="off">
+									</div>
+									<div id="denglu">
+										<button class="button1" type="button">登录</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					</div>
+				</div>	
+			</div>
+			<div id="d2">
+				<div id="yejiao1">
+					<img class="i3" src="img/未标题-2.png"/>
+				</div>
+				<div id="yejiao2">
+					<br />
+					<a href="###">隐私</a>&nbsp;丨&nbsp;
+					<a href="###">法律条款</a>&nbsp;丨&nbsp;
+					<a href="###">API</a>
+					<br /><br />
+					<p>&copy;2019师大512版权所有&nbsp;&nbsp;&nbsp;ICP备号：你猜猜有没有&nbsp;&nbsp;&nbsp;<br/>
+						互联网违法和不良信息举报电话：110110110&nbsp;&nbsp;&nbsp;<br/>
+						技术支持：雷霆嘎巴，无情哈拉少
+					丨适龄提示：适合130岁及以上使用
+					</p>
+				</div>
+				<div id="yejiao3">
+					<hr class="hr1" />
+					<p class="p1">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理最大化游戏时间，避免沉溺生活影响游戏，注意自我保护，防范网络陷阱。<br />
+		健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏会益脑，沉迷游戏不伤身。合理安排时间，享受游戏生活。
+					</p>
+				</div>
+			</div>
+			<a href="javascript:void(0)" id="toTop" style="display: none;">TOP<img class="totop" src="img/totop.jpg"/></a>
+		</div>
+	</body>
+</html>

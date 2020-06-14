@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频CG</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/2.js"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//返回顶部
+	        $(function () {
+	            $(window).scroll(function(){
+	                if ($(window).scrollTop()>100){/*距离顶部*/
+	                    $("#toTop").fadeIn(1000);/*出现渐变*/
+	                }
+	                else
+	                {
+	                    $("#toTop").fadeOut(500);/*消失渐变*/
+	                }
+	            });
+	    
+	            $("#toTop").click(function(){
+	                $('body,html').animate({scrollTop:0},500);/*调整返回速度*/
+	                return false;
+	            });
+	        });
+		</script>
+	</head>
+	<body>
+		<div id="whole">
+			<div id="d13">
+				<div id="head">
+					<div id="nav">
+						<div class="logo">
+							<a href="1.html"><img src="img/1.png"></a>
+						</div>
+						<div class="c2"><a href="index.html">首页</a></div>
+						<div class="c2"><a href="juese.html">角色</a></div>
+						<div class="c2"><a href="shipin.html">视频CG</a></div>
+						<div class="c2"><a href="xiazai.html">下载</a></div>
+						<div id="c22" class="c2"><a href="beijinggushi.html">背景故事</a></div>
+						<div id="c22" class="c2"><a href="youximoshi.html">游戏模式</a></div>
+						<div id="c22" class="c2"><a href="lianxi.html">联系我们</a></div>
+						<div id="d4">
+							<a href="###">通行证</a>
+							<div class="c1">
+								<div id="c11">
+									<button id="login" type="button" onclick="divshow()">登录</button>
+								</div>
+								<div id="c12">
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">注册</a>
+								</div>
+								<div id="c13">
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">账户</a>
+								</div>
+							</div>								
+						</div>
+						<div id="d5">
+							<img class="img2" src="img/logo1.png"/>
+							<a onclick="divclose()"><img class="i" src="img/QQ图片20181123135526.png"/></a>
+							<div id="biaodan">
+							<form name="form">
+								<div class="form">
+									<div id="form-item1" class="form-item">
+										<input type="text" name="text" placeholder="电子邮箱" autocomplete="off">
+									</div>
+									<div id="form-item2" class="form-item">
+										<input type="password" name="password" placeholder="密码" autocomplete="off">
+									</div>
+									<div id="denglu">
+										<button class="button1" type="button">登录</button>
+									</div>
+								</div>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+								<div id="shipin">
+					<h2 class="hh">视频</h2>
+					<div class="sp1">
+						<div class="spdiv">动画视频</div>
+						<a href="###" onclick="ashow1()" class="bk">
+							<img class="bf" src="img/bf.png" />
+							<img class="i6" src="img/sp1.jpg" />
+						</a>
+					</div>
+					<div id="spbf1">
+						<a onclick="aclose1()"><img class="i2" src="img/QQ图片20181123135526.png" /></a>
+						<video src="img/sp1.mp4" id="videofile1" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp1">
+						<div class="spdiv">游戏视频1</div>
+						<a href="###" onclick="ashow2()" class="bk">
+							<img class="bf" src="img/bf.png" />
+							<img class="i6" src="img/sp2.jpg" />
+						</a>
+					</div>
+					<div id="spbf2">
+						<a onclick="aclose2()"><img class="i2" src="img/QQ图片20181123135526.png" /></a>
+						<video src="img/sp2.mp4" id="videofile2" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">动画短片：《重逢》</div>
+						<a href="###" onclick="ashow3()" class="bk">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp3.jpg" />
+						</a>
+					</div>
+					<div id="spbf3">
+					<a onclick="aclose3()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/动画短片-重逢.mp4" id="videofile3" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">动画短片：《星光闪耀》</div>
+						<a href="###" ondblclick="ashow4()" class="bk">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp4.jpg" />
+						</a>
+					</div>
+					<div id="spbf4">
+					<a onclick="aclose4()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-D.VA.mp4" id="videofile4" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">动画短片：《荣耀》</div>
+						<a href="###" onclick="ashow5()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp5.jpg" />
+						</a>
+					</div>
+					<div id="spbf5">
+					<a onclick="aclose5()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-dachui.mp4" id="videofile5" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">动画短片：《我们出发吧》</div>
+						<a href="###" onclick="ashow6()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp6.jpg" />
+						</a>
+					</div>
+					<div id="spbf6">
+					<a onclick="aclose6()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-xiaomei.mp4" id="videofile6" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">动画短片：《渗透》</div>
+						<a href="###" onclick="ashow7()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp7.jpg" />
+						</a>
+					</div>
+					<div id="spbf7">
+					<a onclick="aclose7()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-heiying.mp4" id="videofile7" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">动画短片：《最后的堡垒》</div>
+						<a href="###" onclick="ashow8()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp8.jpg" />
+						</a>
+					</div>
+					<div id="spbf8">
+					<a onclick="aclose8()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-baolei.mp4" id="videofile8" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">动画短片：《英雄》</div>
+						<a href="###" onclick="ashow9()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp9.jpg" />
+						</a>
+					</div>
+					<div id="spbf9">
+					<a onclick="aclose9()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-76.mp4" id="videofile9" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">动画短片：《双龙》</div>
+						<a href="###" onclick="ashow10()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp10.jpg" />
+						</a>
+					</div>
+					<div id="spbf10">
+					<a onclick="aclose10()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-shuanglong.mp4" id="videofile10" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">动画短片：《新生》</div>
+						<a href="###" onclick="ashow11()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp11.jpg" />
+						</a>
+					</div>
+					<div id="spbf11">
+					<a onclick="aclose11()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-heibaihe.mp4" id="videofile11" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">动画短片：《归来》</div>
+						<a href="###" onclick="ashow12()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp12.jpg" />
+						</a>
+					</div>
+					<div id="spbf12">
+					<a onclick="aclose12()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-guilai.mp4" id="videofile12" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">宣传视频</div>
+						<a href="###" onclick="ashow13()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/xcsp.jpg" />
+						</a>
+					</div>
+					<div id="spbf13">
+					<a onclick="aclose13()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-xuanchuan.mp4" id="videofile13" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">英雄故事：艾什</div>
+						<a href="###" onclick="ashow14()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp13.jpg" />
+						</a>
+					</div>
+					<div id="spbf14">
+					<a onclick="aclose14()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-aishi.mp4" id="videofile14" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">英雄故事："破坏球"</div>
+						<a href="###" onclick="ashow15()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp14.jpg" />
+						</a>
+					</div>
+					<div id="spbf15">
+					<a onclick="aclose15()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-pohuaiqiu.mp4" id="videofile15" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">英雄故事：布里吉塔</div>
+						<a href="###" onclick="ashow16()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp15.jpg" />
+						</a>
+					</div>
+					<div id="spbf16">
+					<a onclick="aclose16()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-bulijita.mp4" id="videofile16" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">英雄故事：莫伊拉</div>
+						<a href="###" onclick="ashow17()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp16.jpg" />
+						</a>
+					</div>
+					<div id="spbf17">
+					<a onclick="aclose17()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-moyila.mp4" id="videofile17" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">英雄故事：末日铁拳</div>
+						<a href="###" onclick="ashow18()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp17.jpg" />
+						</a>
+					</div>
+					<div id="spbf18">
+					<a onclick="aclose18()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-moritiequan.mp4" id="videofile18" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">英雄故事：奥丽莎</div>
+						<a href="###" onclick="ashow19()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp18.jpg" />
+						</a>
+					</div>
+					<div id="spbf19">
+					<a onclick="aclose19()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-aishi.mp4" id="videofile19" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">英雄故事：黑影</div>
+						<a href="###" onclick="ashow20()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp19.jpg" />
+						</a>
+					</div>
+					<div id="spbf20">
+					<a onclick="aclose20()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-heiying2.mp4" id="videofile20" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">英雄故事：安娜</div>
+						<a href="###" onclick="ashow21()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp20.jpg" />
+						</a>
+					</div>
+					<div id="spbf21">
+					<a onclick="aclose21()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-anna.mp4" id="videofile21" controls="controls" preload="auto"></video>
+					</div>
+					<div class="sp2">
+						<div class="spdiv2">游戏视频2</div>
+						<a href="###" onclick="ashow22()">
+							<img class="bf1" src="img/bf.png" />
+							<img class="i7" src="img/sp21.jpg" />
+						</a>
+					</div>
+					<div id="spbf22">
+					<a onclick="aclose22()"><img class="i2" src="img/QQ图片20181123135526.png"/></a>
+					<video src="img/sp-youxishiping2.mp4" id="videofile22" controls="controls" preload="auto"></video>
+					</div>
+				</div>
+			</div>
+			<div id="d2">
+				<div id="yejiao1">
+					<img class="i3" src="img/未标题-2.png"/>
+				</div>
+				<div id="yejiao2">
+					<br />
+					<a href="###">隐私</a>&nbsp;丨&nbsp;
+					<a href="###">法律条款</a>&nbsp;丨&nbsp;
+					<a href="###">API</a>
+					<br /><br />
+					<p>&copy;2019师大512版权所有&nbsp;&nbsp;&nbsp;ICP备号：你猜猜有没有&nbsp;&nbsp;&nbsp;<br/>
+						互联网违法和不良信息举报电话：110110110&nbsp;&nbsp;&nbsp;<br/>
+						技术支持：雷霆嘎巴，无情哈拉少(别看了没有视频给你看，不想下载了，麻烦)
+					丨适龄提示：适合130岁及以上使用
+					</p>
+				</div>
+				<div id="yejiao3">
+					<hr class="hr1" />
+					<p class="p1">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理最大化游戏时间，避免沉溺生活影响游戏，注意自我保护，防范网络陷阱。<br />
+		健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏会益脑，沉迷游戏不伤身。合理安排时间，享受游戏生活。
+					</p>
+				</div>
+			</div>
+			<a href="javascript:void(0)" id="toTop" style="display: none;">TOP<img class="totop" src="img/totop.jpg"/></a>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>故事背景</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/2.js"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		//返回顶部
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){/*距离顶部*/
+                    $("#toTop").fadeIn(1000);/*出现渐变*/
+                }
+                else
+                {
+                    $("#toTop").fadeOut(500);/*消失渐变*/
+                }
+            });
+    
+            $("#toTop").click(function(){
+                $('body,html').animate({scrollTop:0},500);/*调整返回速度*/
+                return false;
+            });
+        });
+</script>
+	</head>
+	<body>
+		<div id="whole">
+			<div id="d14">
+				<div id="head">
+					<div id="nav">
+						<div class="logo">
+							<a href="1.html"><img src="img/1.png"></a>
+						</div>
+						<div class="c2"><a href="index.html">首页</a></div>
+						<div class="c2"><a href="juese.html">角色</a></div>
+						<div class="c2"><a href="shipin.html">视频CG</a></div>
+						<div class="c2"><a href="xiazai.html">下载</a></div>
+						<div id="c22" class="c2"><a href="beijinggushi.html">背景故事</a></div>
+						<div id="c22" class="c2"><a href="youximoshi.html">游戏模式</a></div>
+						<div id="c22" class="c2"><a href="lianxi.html">联系我们</a></div>
+						<div id="d4">
+							<a href="###">通行证</a>
+							<div class="c1">
+								<div id="c11">
+									<button id="login" type="button" onclick="divshow()">登录</button>
+								</div>
+								<div id="c12">
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">注册</a>
+								</div>
+								<div id="c13">
+									&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">账户</a>
+								</div>
+							</div>								
+						</div>
+						<div id="d5">
+							<img class="img2" src="img/logo1.png"/>
+							<a onclick="divclose()"><img class="i" src="img/QQ图片20181123135526.png"/></a>
+							<div id="biaodan">
+							<form name="form">
+								<div class="form">
+									<div id="form-item1" class="form-item">
+										<input type="text" name="text" placeholder="电子邮箱" autocomplete="off">
+									</div>
+									<div id="form-item2" class="form-item">
+										<input type="password" name="password" placeholder="密码" autocomplete="off">
+									</div>
+									<div id="denglu">
+										<button class="button1" type="button">登录</button>
+									</div>
+								</div>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--人物图-->
+				<div id="rw">
+					<div class="bjs"></div>
+					<div id="renwu1">
+						<div class="r1">
+							<img class="rwtu1" src="img/rw-D.VA.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">D.VA</h1>
+								<p class="p3">一名前职业玩家，而现在则利用自己的技巧驾驶一台尖端机甲保卫国家。</p>
+							</div>
+						</div>	
+						<div class="rw-dva">
+							<a href="###"><img class="txtu" src="img/D.VA.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu2">
+						<div class="r2">
+							<img class="rwtu1" src="img/rw-aolisha.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">奥丽莎</h1>
+								<p class="p3">维护努巴尼秩序并保护努巴尼人民的维和机器人。</p>
+							</div>
+						</div>	
+						<div class="rw-aolisha">
+							<a href="###"><img class="txtu" src="img/tx-aolisha.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu3">
+						<div class="r3">
+							<img class="rwtu1" src="img/rw-laiyinhate.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">莱因哈特</h1>
+								<p class="p3">一名属于过去的勇士，时刻铭记着骑士的信条：无畏、公正、勇敢。</p>
+							</div>
+						</div>	
+						<div class="rw-laiyinhate">
+							<a href="###"><img class="txtu" src="img/tx-laiyinhate.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu4">
+						<div class="r4">
+							<img class="rwtu1" src="img/rw-luba.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">路霸</h1>
+								<p class="p3">一名残暴的杀手，因残忍和肆意破坏而臭名昭著。</p>
+							</div>
+						</div>	
+						<div class="rw-luba">
+							<a href="###"><img class="txtu" src="img/tx-luba.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu5">
+						<div class="r5">
+							<img class="rwtu1" src="img/rw-xingxing.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">温斯顿</h1>
+								<p class="p3">一只经过基因改造，拥有高等智慧的大猩猩，也是一位出色的科学家和代表着人类潜力的勇士。</p>
+							</div>
+						</div>	
+						<div class="rw-xingxing">
+							<a href="###"><img class="txtu" src="img/tx-xingxing.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu6">
+						<div class="r6">
+							<img class="rwtu2" src="img/rw-maomei.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">查莉娅</h1>
+								<p class="p3">世界上最强壮的女性之一。为了保卫祖国，毅然放弃了个人荣誉。</p>
+							</div>
+						</div>	
+						<div class="rw-maomei">
+							<a href="###"><img class="txtu" src="img/tx-maomei.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu7">
+						<div class="r7">
+							<img class="rwtu1" src="img/rw-pohuaiqiu.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">破坏球</h1>
+								<p class="p3">驾驶这台滚动式坦克的是一只经过基因改造的仓鼠，他来自月球基地。</p>
+							</div>
+						</div>	
+						<div class="rw-pohuaiqiu">
+							<a href="###"><img class="txtu" src="img/tx-pohuaiqiu.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu8">
+						<div class="r8">
+							<img class="rwtu2" src="img/rw-aishi.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">艾什</h1>
+								<p class="p3">肆虐美国西南部、臭名昭著的死局帮的首脑。</p>
+							</div>
+						</div>	
+						<div class="rw-aishi">
+							<a href="###"><img class="txtu" src="img/tx-aishi.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu9">
+						<div class="r9">
+							<img class="rwtu1" src="img/rw-baolei.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">堡垒</h1>
+								<p class="p3">一名可以切换形态的机器人，为自然着迷而探索世界，同时也对人类保持着戒心。</p>
+							</div>
+						</div>	
+						<div class="rw-baolei">
+							<a href="###"><img class="txtu" src="img/tx-ballei.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu10">
+						<div class="r10">
+							<img class="rwtu2" src="img/rw-tiequan.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">末日铁拳</h1>
+								<p class="p3">一位利用个人头脑、魅力和蛮力来创建一个更强大世界的战术家。</p>
+							</div>
+						</div>	
+						<div class="rw-tiequan">
+							<a href="###"><img class="txtu" src="img/tx-tiequan.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu11">
+						<div class="r11">
+							<img class="rwtu2" src="img/rw-yuanshi.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">源氏</h1>
+								<p class="p3">一名致命的半机械忍者，通过他的机械躯体寻得了身心的和谐。</p>
+							</div>
+						</div>	
+						<div class="rw-yuanshi">
+							<a href="###"><img class="txtu" src="img/tx-yuanshi.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu12">
+						<div class="r12">
+							<img class="rwtu1" src="img/rw-banzang.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">半藏</h1>
+								<p class="p3">一名强大而致命的弓箭大师。</p>
+							</div>
+						</div>	
+						<div class="rw-banzang">
+							<a href="###"><img class="txtu" src="img/tx-banzang.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu13">
+						<div class="r13">
+							<img class="rwtu2" src="img/rw-kuangshu.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">狂鼠</h1>
+								<p class="p3">一名满脑子都是爆炸的变态疯子，只为了混乱和破坏而活。</p>
+							</div>
+						</div>	
+						<div class="rw-kuangshu">
+							<a href="###"><img class="txtu" src="img/tx-kuangshu.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu14">
+						<div class="r14">
+							<img class="rwtu2" src="img/rw-maikelei.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">麦克雷</h1>
+								<p class="p3">一名亡命天涯的神枪手，以自己的方式伸张正义。</p>
+							</div>
+						</div>	
+						<div class="rw-maikelei">
+							<a href="###"><img class="txtu" src="img/tx-maikelei.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu15">
+						<div class="r15">
+							<img class="rwtu2" src="img/rw-mei.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">美</h1>
+								<p class="p3">一名能够操控天气，为了保护环境而选择战斗的科学家。</p>
+							</div>
+						</div>	
+						<div class="rw-mei">
+							<a href="###"><img class="txtu" src="img/tx-mei.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu16">
+						<div class="r16">
+							<img class="rwtu2" src="img/rw-faji.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">法老之鹰</h1>
+								<p class="p3">一名恪守岗位的战士，用实验性的“猛禽”作战服确保天空的安全。</p>
+							</div>
+						</div>	
+						<div class="rw-faji">
+							<a href="###"><img class="txtu" src="img/tx-faji.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu17">
+						<div class="r17">
+							<img class="rwtu2" src="img/rw-sishen.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">死神</h1>
+								<p class="p3">一名无情的杀手，一直在追杀前守望先锋的特工们。</p>
+							</div>
+						</div>	
+						<div class="rw-sishen">
+							<a href="###"><img class="txtu" src="img/tx-sishen.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu18">
+						<div class="r18">
+							<img class="rwtu2" src="img/rw-76.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">士兵：76</h1>
+								<p class="p3">一名试图自己将守望先锋敌人绳之于法的独行侠。</p>
+							</div>
+						</div>	
+						<div class="rw-76">
+							<a href="###"><img class="txtu" src="img/tx-76.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu19">
+						<div class="r19">
+							<img class="rwtu2" src="img/rw-heiying.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">黑影</h1>
+								<p class="p3">臭名昭著的黑客，沉迷于揭秘——及其带来的权力。</p>
+							</div>
+						</div>	
+						<div class="rw-heiying">
+							<a href="###"><img class="txtu" src="img/tx-heiying.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu20">
+						<div class="r20">
+							<img class="rwtu2" src="img/rw-asan.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">秩序之光</h1>
+								<p class="p3">一名通过控制高强度光束，将世界改造成她心目中完美、有序的模样的光子建筑师。</p>
+							</div>
+						</div>	
+						<div class="rw-asan">
+							<a href="###"><img class="txtu" src="img/tx-asan.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu21">
+						<div class="r21">
+							<img class="rwtu1" src="img/rw-tuobiang.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">托比昂</h1>
+								<p class="p3">一名天才工程师，可以在战场上打造武器系统。</p>
+							</div>
+						</div>	
+						<div class="rw-tuobiang">
+							<a href="###"><img class="txtu" src="img/tx-tuobiang.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu22">
+						<div class="r22">
+							<img class="rwtu2" src="img/rw-liekong.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">猎空</h1>
+								<p class="p3">一名前守望先锋特工，同时也是可以穿梭时间的充满正义的冒险家。</p>
+							</div>
+						</div>	
+						<div class="rw-liekong">
+							<a href="###"><img class="txtu" src="img/tx-liekong.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu23">
+						<div class="r23">
+							<img class="rwtu2" src="img/rw-heibaihe.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">黑百合</h1>
+								<p class="p3">一名完美的杀手：耐心、果断、无情。没有任何情感且事后毫无悔意。</p>
+							</div>
+						</div>	
+						<div class="rw-heibaihe">
+							<a href="###"><img class="txtu" src="img/tx-heibaihe.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu24">
+						<div class="r24">
+							<img class="rwtu2" src="img/rw-anna.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">安娜</h1>
+								<p class="p3">守望先锋的创始成员之一，“起死回生”重返战场保护亲人和朋友。</p>
+							</div>
+						</div>	
+						<div class="rw-anna">
+							<a href="###"><img class="txtu" src="img/tx-anna.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu25">
+						<div class="r25">
+							<img class="rwtu2" src="img/rw-bulijita.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">布丽吉塔</h1>
+								<p class="p3">一位渴望冒险，希望惩强扶弱的重装战士。</p>
+							</div>
+						</div>	
+						<div class="rw-bulijita">
+							<a href="###"><img class="txtu" src="img/tx-bulijita.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu26">
+						<div class="r26">
+							<img class="rwtu2" src="img/rw-dj.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">卢西奥</h1>
+								<p class="p3">一位国际名人，通过音乐和巡演激发社会正能量。</p>
+							</div>
+						</div>	
+						<div class="rw-dj">
+							<a href="###"><img class="txtu" src="img/tx-dj.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu27">
+						<div class="r27">
+							<img class="rwtu2" src="img/rw-tianshi.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">天使</h1>
+								<p class="p3">一名集顶尖的治疗者、出色的科学家和坚定的和平主义者于一身的守护天使。</p>
+							</div>
+						</div>	
+						<div class="rw-tianshi">
+							<a href="###"><img class="txtu" src="img/tx-tianshi.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu28">
+						<div class="r28">
+							<img class="rwtu1" src="img/rw-moyila.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">莫伊拉</h1>
+								<p class="p3">一位天才基因科学家，无视道德的束缚，一心追求科学发现。</p>
+							</div>
+						</div>	
+						<div class="rw-moyila">
+							<a href="###"><img class="txtu" src="img/tx-moyila.png"/></a>	
+						</div>
+					</div>
+					<div id="renwu29">
+						<div class="r29">
+							<img class="rwtu2" src="img/rw-heshang.png"/>
+							<div class="yxjs">
+								<h1 class="hh1">禅雅塔</h1>
+								<p class="p3">一位游走于世界寻找灵魂升华之道的机械僧侣。</p>
+							</div>
+						</div>	
+						<div class="rw-heshang">
+							<a href="###"><img class="txtu" src="img/tx-heshang.png"/></a>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="d2">
+				<div id="yejiao1">
+					<img class="i3" src="img/未标题-2.png"/>
+				</div>
+				<div id="yejiao2">
+					<br />
+					<a href="###">隐私</a>&nbsp;丨&nbsp;
+					<a href="###">法律条款</a>&nbsp;丨&nbsp;
+					<a href="###">API</a>
+					<br /><br />
+					<p>&copy;2019师大512版权所有&nbsp;&nbsp;&nbsp;ICP备号：你猜猜有没有&nbsp;&nbsp;&nbsp;<br/>
+						互联网违法和不良信息举报电话：110110110&nbsp;&nbsp;&nbsp;<br/>
+						技术支持：雷霆嘎巴，无情哈拉少
+					丨适龄提示：适合130岁及以上使用
+					</p>
+				</div>
+				<div id="yejiao3">
+					<hr class="hr1" />
+					<p class="p1">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理最大化游戏时间，避免沉溺生活影响游戏，注意自我保护，防范网络陷阱。<br />
+		健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏会益脑，沉迷游戏不伤身。合理安排时间，享受游戏生活。
+					</p>
+				</div>
+			</div>
+			<a href="javascript:void(0)" id="toTop" style="display: none;">TOP<img class="totop" src="img/totop.jpg"/></a>
+		</div>
+	</body>
+</html>
